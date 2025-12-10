@@ -13,37 +13,43 @@
 	</head>
 	<style>
 		/* Add some content at the bottom of the video/page */
-		.header-content {
-		position: fixed;
-		bottom: 0;
-		background: rgba(0, 0, 0, 0.5);
-		color: #f1f1f1;
-		width: 100%;
-		padding: 20px;
-		}
+		/* .header-content {
+			position: fixed;
+			bottom: 0;
+			background: rgba(0, 0, 0, 0.5);
+			color: #f1f1f1;
+			width: 100%;
+			padding: 20px;
+		 } */
 		/* Style the video: 100% width and height to cover the entire window */
 		#myVideo {
-		position: fixed;
-		right: 0;
-		bottom: 0;
-		min-width: 100%;
-		min-height: 100%;
+			position: fixed;
+			right: 0;
+			bottom: 0;
+			min-width: 100%;
+			min-height: 100%;
 		}
+		#footer-wrapper{
+			background-color: rgba(0, 0, 0, 1);
+		}
+
 	</style>
 	<body class="homepage is-preload">
 		<div id="page-wrapper">
 			
 			<!-- Header -->
-				<div id="header-wrapper header-content">
-					<!-- The video -->
-			<video autoplay muted loop id="myVideo">
-			<source src="./assets/fryery-video.mp4" type="video/mp4">
-			</video>
-					<div class="container">
-
+				<div id="header-wrapper" class=" hero">
+								
+					<div class="container header-content">
+																			<!-- The video -->
+							
 						<!-- Header -->
 							<header id="header">
-								<div class="inner">
+							<video autoplay muted loop id="myVideo">
+							<source src="./assets/fryery-video.mp4" type="video/mp4">
+							</video>
+							<div class="overlay"></div>
+								<div class="inner hero-content">
 
 									<!-- Logo -->
 										<h1><a href="index.html" id="logo">ZeroFour</a></h1>
@@ -80,6 +86,7 @@
 
 						<!-- Banner -->
 							<div id="banner">
+
 								<h2><strong>ZeroFour:</strong> A free responsive site template
 								<br />
 								built on HTML5 and CSS3 by <a href="http://html5up.net">HTML5 UP</a></h2>
@@ -109,7 +116,7 @@
 										</div>
 										<div class="col-4 col-12-medium">
 											<section>
-												<a href="#" class="image featured"><img src="images/pic01.jpg" alt="" /></a>
+												<a href="#" class="image featured"><img src="./images/food-items/sk-uVPV_nV17Tw-unsplash.jpg" alt="" /></a>
 												<header class="second icon solid fa-user">
 													<h3>Here's a Heading</h3>
 													<p>And a subtitle</p>
@@ -118,7 +125,7 @@
 										</div>
 										<div class="col-4 col-12-medium">
 											<section>
-												<a href="#" class="image featured"><img src="images/pic02.jpg" alt="" /></a>
+												<a href="#" class="image featured"><img src="./images/food-items/shiv-singh-Vj-J5xNjnxA-unsplash.jpg" alt="" /></a>
 												<header class="second icon solid fa-cog">
 													<h3>Also a Heading</h3>
 													<p>And another subtitle</p>
